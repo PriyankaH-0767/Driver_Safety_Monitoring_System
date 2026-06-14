@@ -114,7 +114,7 @@ This project demonstrates the practical application of machine learning and imag
 ## Author
 
 Priyanka H
-mini trial project
+Mini trial project
 
-Mini Project
+
 
