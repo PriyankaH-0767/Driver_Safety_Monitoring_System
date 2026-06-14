@@ -1,48 +1,46 @@
-# Driver Safety Monitoring System using Teachable Machine
+# Driver Safety Monitoring System using Google Teachable Machine
 
 ## Project Overview
 
-The Driver Safety Monitoring System is an image recognition project developed using Google Teachable Machine and Python. The system classifies the driver's condition into one of the following categories:
+The Driver Safety Monitoring System is an image classification project developed using Google Teachable Machine. The project aims to identify the driver's condition and classify it into one of three categories:
 
 * Active Driver
 * Distracted Driver
 * Sleeping (Drowsy) Driver
 
-The primary objective of this project is to improve road safety by detecting unsafe driving behaviour in real time.
+The objective of this project is to demonstrate how machine learning can be used to monitor driver behaviour and improve road safety.
 
 ---
 
 ## Problem Statement
 
-Driver fatigue and distraction are among the major causes of road accidents. Continuous monitoring of a driver's state can help in identifying risky situations and preventing accidents.
+Driver distraction and drowsiness are major causes of road accidents. Detecting unsafe driving conditions at an early stage can help reduce the risk of accidents and promote safer driving practices.
 
-This project uses a machine learning model trained with Teachable Machine to recognize different driver states through image classification.
+This project uses image recognition to classify a driver's state based on webcam input.
 
 ---
 
 ## Objectives
 
-* Detect whether the driver is active, distracted, or sleeping.
-* Use image recognition techniques for classification.
-* Provide a simple and user-friendly driver monitoring solution.
-* Demonstrate the practical application of machine learning in road safety.
+* Train an image classification model using Google Teachable Machine.
+* Classify the driver's condition into Active, Distracted, and Sleeping categories.
+* Demonstrate the effectiveness of machine learning in driver safety applications.
+* Provide a simple and accessible solution without requiring complex deployment.
 
 ---
 
 ## Technologies Used
 
 * Google Teachable Machine
-* Python
-* TensorFlow / Keras
-* OpenCV
-* NumPy
-* Pillow
+* TensorFlow (Keras Export)
+* Image Classification
+* Webcam-based Testing
 
 ---
 
 ## Dataset Classes
 
-The model was trained using three classes:
+The model was trained using the following three classes:
 
 1. Active Driver
 2. Distracted Driver
@@ -50,17 +48,34 @@ The model was trained using three classes:
 
 ---
 
+## Model Export
+
+The trained model was exported from Google Teachable Machine using:
+
+TensorFlow → Keras Export
+
+Exported Files:
+
+* keras_model.h5
+* labels.txt
+
+---
+
+## Testing Method
+
+The model was tested using the built-in webcam preview available in Google Teachable Machine.
+
+The webcam captured live images and classified the driver's condition in real time.
+
+---
+
 ## Project Structure
 
 Driver-Safety-Monitoring-System/
 
-├── app.py
-
 ├── keras_model.h5
 
 ├── labels.txt
-
-├── requirements.txt
 
 ├── README.md
 
@@ -68,64 +83,38 @@ Driver-Safety-Monitoring-System/
 
 ---
 
-## How to Run the Project
-
-### 1. Clone the Repository
-
-git clone 
-
-### 2. Navigate to the Project Folder
-
-cd Driver-Safety-Monitoring-System
-
-### 3. Install Required Libraries
-
-pip install -r requirements.txt
-
-### 4. Run the Application
-
-python app.py
-
-### 5. Usage
-
-* The webcam will open automatically.
-* The system captures frames from the webcam.
-* The trained model predicts the driver's state.
-* The prediction result and confidence score are displayed on the screen.
-* Press 'q' to exit the application.
-
----
-
 ## Results
 
-The system successfully classifies the driver's condition into:
+The trained model successfully identified and classified the driver's condition into:
 
-* Active
-* Distracted
-* Sleeping
+* Active Driver
+* Distracted Driver
+* Sleeping Driver
 
-based on the trained Teachable Machine model.
+Screenshots of the model predictions obtained from the Teachable Machine webcam preview are included in the repository.
 
 ---
 
 ## Future Enhancements
 
-* Add an alarm system when drowsiness is detected.
-* Store detection logs for analysis.
-* Deploy the system on embedded devices such as Raspberry Pi.
-* Integrate GPS and emergency notification features.
-* Develop a mobile application interface.
+* Develop a standalone Python application for real-time monitoring.
+* Integrate an alarm system for drowsiness detection.
+* Deploy the model on embedded systems such as Raspberry Pi.
+* Add logging and alert features.
+* Extend the system with additional driver behaviour classes.
 
 ---
 
 ## Conclusion
 
-The Driver Safety Monitoring System demonstrates how machine learning and image recognition can be used to improve road safety. By identifying driver distraction and drowsiness in real time, the system has the potential to reduce accidents and promote safer driving practices.
+This project demonstrates the practical application of machine learning and image recognition in the field of driver safety. Using Google Teachable Machine, an effective image classification model was developed to detect driver alertness and distraction through webcam-based testing.
 
 ---
 
 ## Author
 
 Priyanka H
+mini trial project
 
 Mini Project
+
